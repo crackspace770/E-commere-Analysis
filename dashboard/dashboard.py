@@ -79,7 +79,7 @@ def create_rfm_df(df):
     
     return rfm_df
 
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("main_data.csv")
 
 
 datetime_columns = ["order_purchase_timestamp", "order_delivered_customer_date"]
@@ -119,7 +119,7 @@ payment_method_df = create_payment_method_df(main_df)
 deliverytime_df = create_delivery_time_df(main_df)
 rfm_df = create_rfm_df(main_df)
 
-st.header('E-Commerce Dashboard :sparkles:')
+st.header('E-Commerce Dashboard')
 
 st.subheader('Daily Orders')
 
