@@ -135,9 +135,9 @@ with col2:
 
 fig, ax = plt.subplots(figsize=(16, 8))
 ax.plot(
-    daily_orders_df["order_purchase_timestamp"],
-    daily_orders_df["order_count"],
-    marker='o', 
+    daily_orders_df["order_purchase_timestamp"].to_list(),
+    daily_orders_df["order_count"].to_list(),
+    marker='o',
     linewidth=2,
     color="#90CAF9"
 )
